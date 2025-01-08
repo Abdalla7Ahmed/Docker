@@ -138,10 +138,10 @@ docker-compose up --build
 4. **Access the App**:
 	- Open your browser and go to `http://localhost:5000`.
 
-![screen](Docker/images/9.1.png)
+![screen](./images/9.1.png)
 
 
-![screen](Docker/images/9.2.png)
+![screen](./images/9.2.png)
 
 
 ### **Why Use Docker Compose?**

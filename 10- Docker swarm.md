@@ -7,7 +7,7 @@ These nodes of the Swarm, as it was said, are connected with each other, can be 
 - **Worker nodes**: These contain the workloads of your system.
 
 
-![screen](Docker/images/10.1.png)
+![screen](./images/10.1.png)
 
 ### **Key Components of Docker Swarm**
 

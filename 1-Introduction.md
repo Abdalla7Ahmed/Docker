@@ -1,7 +1,7 @@
 
 
 ### 1. **Difference Between Virtual Machines (VMs) and Containers**
-![screen](Docker/images/1.1.png)
+![screen](./images/1.1.png)
 
 | **Feature**         | **Virtual Machines (VMs)**                                        | **Containers**                                                 |
 | ------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------- |

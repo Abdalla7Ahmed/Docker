@@ -24,7 +24,7 @@ From one container, you can ping the other using its container name:
 ping alpine_bridge2
 ```
  
-![screen](Docker/images/5.1.png)
+![screen](./images/5.1.png)
 
 
 ### **2. Host Network**
@@ -42,7 +42,7 @@ ifconfig
 ```
 The container will show the host's network interfaces (e.g., `eth0` or `wlan0`).
 
-![screen](Docker/images/5.2.png)
+![screen](./images/5.2.png)
 
 ### **3. None Network**
 
@@ -62,7 +62,7 @@ You’ll see only the `lo` (loopback) interface, with no other network interface
 ping 8.8.8.8
 ```
 
-![screen](Docker/images/5.3.png)
+![screen](./images/5.3.png)
 
 ### **Comparison Table**
 
@@ -87,7 +87,7 @@ or we can connect network with running container
 docker network connect mynet alp1
 ```
 
-![screen](Docker/images/5.4.png)
+![screen](./images/5.4.png)
 
 **Docker Network Options:**
 - **`--subnet`**: Defines a custom IP range for the network.  

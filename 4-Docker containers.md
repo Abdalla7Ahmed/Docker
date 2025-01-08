@@ -8,12 +8,12 @@ It is a lightweight, standalone, and executable package that includes everything
 
 **VMs Architecture**
 
-![screen](Docker/images/4.1.png)
+![screen](./images/4.1.png)
 
 
 **Containers Architecture**
 
-![screen](Docker/images/4.2.png)
+![screen](./images/4.2.png)
 
 
 ### Starting a simple container
@@ -31,7 +31,7 @@ $ docker container run -it ubuntu:latest
 - `/bin/bash` this makes Bash shell **one and only process running inside of the container**. Run `ps -elf` to validate.
 - `root@50949b614477:/#` container pseudo terminal
 
-![screen](Docker/images/4.3.png)
+![screen](./images/4.3.png)
 
 ### Container processes
 
@@ -62,7 +62,7 @@ docker rm <container_id>
 docker ps -a
 ```
 
-![screen](Docker/images/4.4.png)
+![screen](./images/4.4.png)
 
 When running Docker containers, you can provide various **arguments** and options to control the behavior of the container. These arguments are passed to the `docker run` command, allowing you to customize aspects like networking, resource limits, volume mounting, and environment variables.
 
@@ -84,7 +84,7 @@ docker run -d nginx
 docker run --name my-web-server nginx
 ```
 
-![screen](Docker/images/4.5.png)
+![screen](./images/4.5.png)
 
  **3. Environment Variables**
  - Pass environment variables to a container using the `-e` or `--env` flag.
@@ -93,7 +93,7 @@ docker run --name my-web-server nginx
  docker run -e MYSQL_ROOT_PASSWORD=my-secret-pw mysql
 ```
 
-![screen](Docker/images/4.6.png)
+![screen](./images/4.6.png)
 
 **4. Port Mapping**
 - Use the `-p` flag to map a container's port to a port on the host machine.
@@ -111,7 +111,7 @@ docker run -v /host/data:/container/data nginx
 
 This mounts the host directory `/host/data` into `/container/data` inside the container.
 
-![screen](Docker/images/4.7.png)
+![screen](./images/4.7.png)
 
  **6. Restart Policies**
 Restart policies are applied per-container, and can be configured imperatively on the command line as part of `docker container run` commands, or declaratively in YAML files for use with higher-level tools
@@ -151,7 +151,7 @@ docker run --network=my-network nginx
 docker run ubuntu echo "Hello, Docker!"
 ```
 
-![screen](Docker/images/4.8.png)
+![screen](./images/4.8.png)
 
 **10. Attach Mode**
 - Use `--attach` to connect to a running container's output

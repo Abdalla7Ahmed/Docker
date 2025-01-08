@@ -42,7 +42,7 @@ touch /newfile
 ```
 
 
-![screen](Docker/images/6.1.png)
+![screen](./images/6.1.png)
 
 once we delete this container, all changes are dropped(Non-Persistent Storage).
 
@@ -70,7 +70,7 @@ docker run -it -v /home/abdallah/Docker-test/local:/app/local ubuntu
 ```
 
 
-![screen](Docker/images/6.2.png)
+![screen](./images/6.2.png)
 
 - **Volumes**: Managed by Docker, ideal for long-term storage.
 ```bash
@@ -78,4 +78,4 @@ docker volume create myvol
 docker run -it -v myvol:/app/code python bash
 ```
 
-![screen](Docker/images/6.3.png)
+![screen](./images/6.3.png)

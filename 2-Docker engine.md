@@ -2,7 +2,7 @@ The Docker engine is the core component of the Docker architecture that makes co
 
 **The Docker engine is made up of several components**, including the Docker daemon, containerd, and runc.
 
-![screen](Docker/images/2.1.png)
+![screen](./images/2.1.png)
 
 **1-Docker Daemon** : The Docker daemon is the primary component of the Docker engine. It runs on the host machine and is responsible for managing the Docker containers, images, and networks. The Docker daemon listens for requests from the Docker client and performs the requested actions. It also interacts with containerd and runc to create and manage containers.
 

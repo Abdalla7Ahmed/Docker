@@ -11,7 +11,7 @@ The process of containerizing an app looks like this:
 5. Run container from the image
 
 
-![screen](Docker/images/7.1.png)
+![screen](./images/7.1.png)
  
 ### Steps to Containerize an App
 
@@ -83,7 +83,7 @@ docker build -t my-flask-app .
 - `-t my-flask-app`: Tags the image with a name (`my-flask-app`).
 - `.`: Specifies the current directory as the build context.
 
-![screen](Docker/images/7.2.png)
+![screen](./images/7.2.png)
 
 
 **5. Run the Docker Container**
@@ -102,14 +102,14 @@ docker run -d -p 5000:5000 --name flask-container my-flask-app
 **6. Test the Application**
 Open a browser or use `curl` to verify the app is running:
 
-![screen](Docker/images/7.3.png)
+![screen](./images/7.3.png)
 
 ```bash
 curl http://localhost:5000
 curl http://localhost:5000/test
 ```
 
-![screen](Docker/images/7.4.png)
+![screen](./images/7.4.png)
 
 
 **7. Push the Image to Docker Hub (Optional)**
@@ -120,7 +120,7 @@ docker tag my-flask-app username/my-flask-app
 docker push username/my-flask-app
 ```
 
-![screen](Docker/images/7.5.png)
+![screen](./images/7.5.png)
 
  
 ### Docker Image Layers
@@ -166,14 +166,15 @@ let's compare with the base image (python) and the new image (my-flask-app)
 
 the layers of python image 
 
-![screen](Docker/images/7.6.png)
+![screen](./images/7.6.png)
 
 the layers of my-flask-app image 
 
-![screen](Docker/images/7.7.png)
+![screen](./images/7.7.png)
 
 if we compare the two images, three layers added to the my-flask-app image 
 WORKDIR /app --> new layer
 COPY flask_app.py requirements.txt /app/ --> new layer
 RUN pip install -r requirements.txt --> new layer
-![screen](Docker/images/7.8.png)
+
+![screen](./images/7.8.png)

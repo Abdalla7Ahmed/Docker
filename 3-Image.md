@@ -6,7 +6,8 @@ A **Docker image** is a lightweight, standalone, and executable software package
 - **System Tools**: Essential binaries and utilities.
 - **System Libraries**: Shared libraries required by the binaries.
 
-Docker images serve as the **blueprint** for creating Docker containers.
+Docker 
+images serve as the **blueprint** for creating Docker containers.
 
 ### **How Docker Images Work**
 
@@ -367,7 +368,7 @@ Docker ensures that:
 
 ### Images and layers
 Docker images are made up of multiple read-only **layers**, where each layer represents a set of changes (e.g., adding files, modifying configurations)
-![screen](Docker/images/3.3.png)
+![screen](./images/3.3.png)
 **Example Structure**:
 ```plaintext
 Layer 1: Base Layer (Alpine Linux)
